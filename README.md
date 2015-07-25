@@ -11,5 +11,7 @@ How to format your calendar:
  - All hover text must be contained within a link text.
  - You may change which element is used as the container for the hover text in the CSS.
 
-Coming soon: a sidebar.md generator
+To generate your own calendar:
+ - Run the included sidebar_md_generator.py to generate your own calendar
+ - Coming soon: add your own events from within sidebar_md_generator.py
 
