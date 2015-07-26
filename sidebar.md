@@ -1,9 +1,9 @@
-__July, 2015__
-
+__August 2015__
 | S | M | T | W | T | F | S |
 | --- | --- | --- | --- | --- | --- | --- |
-| _28_ | _29_ | _30_| 1   | 2   | **3** [Event at 3:30pm](http://google.com/)   | 4   |
-| 5   | 6   | 7   | 8   | 9   | **10** [Event at 3:30pm](http://google.com/)  | 11  |
-| 12  | 13  | 14  | 15  | 16  | **17** [Event at 3:30pm](http://google.com/)  | 18  |
-| 19  | 20  | 21  | 22  | 23  | **24** [Event at 3:30pm](http://google.com/)  | 25  |
-| **26** [Event at 4:30pm](http://google.com/) | 27  | 28  | 29  | 30  | **31** [Meeting at 6pm](http://google.com/) | _1_ |
+| 26 | 27 | 28 | 29 | 30 | **31** [Meeting at 6pm](http://google.com/) | 1 |
+| 2 | 3 | 4 | 5 | 6 | **7** [Meeting at 6pm](http://google.com/) | 8 |
+| 9 | 10 | 11 | 12 | 13 | **14** [Meeting at 6pm](http://google.com/) | 15 |
+| 16 | 17 | 18 | 19 | 20 | **21** [Meeting at 6pm](http://google.com/) | 22 |
+| 23 | 24 | 25 | 26 | 27 | **28** [Meeting at 6pm](http://google.com/) | 29 |
+| 30 | 31 | 1 | 2 | 3 | **4** [Meeting at 6pm](http://google.com/) | 5 |
