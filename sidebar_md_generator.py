@@ -43,6 +43,8 @@ def get_month_ary(year: int, month: int) -> list:
 
 def add_preceding_days(year: int, month: int, month_ary: list) -> list:
     """Adds preceding days to the first week of the month in-place"""
+    # constant tuple is 0-indexed
+    month = month - 1
     # check if February
     if month == 1:
         # check if leap year
