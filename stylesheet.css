@@ -14,6 +14,7 @@
     border: 5px solid #DFDFDF;
     color: #717171;
     font-size: 12px;
+    /*font-weight: bold;*/ /* enable if you want to bold the hover text */
     height: auto;
     width: 125px;
     letter-spacing: 1px;
