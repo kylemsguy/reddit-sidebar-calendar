@@ -21,7 +21,7 @@ def is_leap_year(year: int) -> bool:
 
 def get_month_ary(year: int, month: int) -> list:
     """Get the formatted month as a list of lists"""
-    c = TextCalendar()
+    c = TextCalendar(6) # to make week start on Sunday
 
     month_str = c.formatmonth(year, month)
     weeks = month_str.split('\n')
