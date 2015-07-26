@@ -89,7 +89,7 @@ def format_markdown(shortdaywk: bool, month_ary: list) -> str:
 
     # convert to Markdown
     ## add title
-    md_month = ['__', title, '__', '\n']
+    md_month = ['__', title, '__', '\n\n']
 
     ## add day of the week as header
     md_month.append('| ')
