@@ -87,7 +87,7 @@ def format_markdown(shortdaywk: bool, month_ary: list) -> str:
     md_month = ['__', title, '__', '\n']
 
     ## add day of the week as header
-    md_month.append('|')
+    md_month.append('| ')
     
     for day in header:
         if shortdaywk:
@@ -95,14 +95,17 @@ def format_markdown(shortdaywk: bool, month_ary: list) -> str:
         else:
             md_month.append(day)
 
-        md_month.append('|')
+        md_month.append(' |')
+        md_month.append(' ')
 
-    md_month.append('\n')
+    md_month[-1] = '\n'
     md_month.append('|')
 
     ## add header divider
     for i in range(7):
         md_month.append(" --- |")
+
+    md_month.append('\n')
 
     ## add rest of the days
     for week in month:
@@ -151,8 +154,8 @@ if __name__ == "__main__":
 
     print()
     print()
-    write_to_file = input("Specify filename or -1 to print to console: ")
-    if write_to_file == '-1':
+    write_to_file = input("Specify filename or leave blank to print to console: ")
+    if not write_to_file:
         print(formatted_month)
     else:
         with open(write_to_file, 'w') as out_file:
