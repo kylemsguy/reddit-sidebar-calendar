@@ -1,4 +1,7 @@
+#!/usr/bin/env python3
+
 from calendar import TextCalendar
+from datetime import date
 
 days_in_month = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)
 
@@ -124,11 +127,23 @@ def format_markdown(shortdaywk: bool, month_ary: list) -> str:
     return ''.join(md_month)
 
 if __name__ == "__main__":
-    year = int(input("What year?: "))
-    month = int(input("What month?: "))
+    today_year = date.today().year
+    today_month = date.today().month
 
-    trailing = input("Add preceding and trailing days?[Y/n]: ")
-    shortdaywk = input("Single-character days of the week?[Y/n]: ")
+    year = input("What year? [" + str(today_year) + "]: ")
+    month = input("What month? [" + str(today_month) + "]: ")
+
+    if not year:
+        year = today_year
+    else:
+        year = int(year)
+    if not month:
+        month = today_month
+    else:
+        month = int(month)
+
+    trailing = input("Add preceding and trailing days? [Y/n]: ")
+    shortdaywk = input("Single-character days of the week? [Y/n]: ")
 
     if not trailing:
         trailing = True
