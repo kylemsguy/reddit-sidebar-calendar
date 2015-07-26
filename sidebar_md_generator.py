@@ -153,8 +153,9 @@ if __name__ == "__main__":
     formatted_month = format_markdown(shortdaywk, raw_month)
 
     print()
-    print()
     write_to_file = input("Specify filename or leave blank to print to console: ")
+    print()
+    print()
     if not write_to_file:
         print(formatted_month)
     else:
