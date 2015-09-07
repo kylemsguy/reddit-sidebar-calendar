@@ -5,6 +5,30 @@ from datetime import date
 
 days_in_month = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)
 
+class Event:
+    def __init__(self, day, hour, minute, gmt_offset_h, gmt_offset_m):
+        self._day = int(day)
+        self._hour = int(hour)
+        self._minute = int(minute)
+
+        self._tzhr = int(gmt_offset_h)
+        self._tzmin = int(gmt_offset_h)
+
+    def getDay(self):
+        return self._day
+    def getHour(self):
+        return self._hour
+    def getMin(self):
+        return self._minute
+    def getTzLink(self):
+        base_link = "http://localtime.xyz/index.php?"
+        time = self._hour + "%3A" + self._minute
+        tzhr = "offset_h=" + self._tzhr
+        tzmin = "offset_m=" + self._tzmin
+
+        return base_link + time + "&" + tzhr + "&" + tzmin
+
+
 def deep_copy(inList: list) -> list:
     """Makes a deep copy of a list of lists"""
     if isinstance(inList, list):
@@ -128,6 +152,11 @@ def format_markdown(shortdaywk: bool, month_ary: list) -> str:
 
     return ''.join(md_month)
 
+
+def get_user_events():
+    """Gets a list of events from the user and returns a list of Event objects"""
+    pass
+
 if __name__ == "__main__":
     today_year = date.today().year
     today_month = date.today().month
@@ -146,6 +175,7 @@ if __name__ == "__main__":
 
     trailing = input("Add preceding and trailing days? [Y/n]: ")
     shortdaywk = input("Single-character days of the week? [Y/n]: ")
+    event_list = get_user_events() # TODO: finish this function
 
     if not trailing:
         trailing = True
